@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int inp,digit,even=0,ev_place=1,odd=0,od_place=1,res=1;
+    scanf("%d",&inp);
+    while(inp){
+        digit=inp%10;
+        if(digit%2==0){
+            even=even+digit*ev_place;
+            ev_place=ev_place*10;
+        }
+        else{
+            odd=odd+digit*od_place;
+            od_place=od_place*10;
+        }
+        inp=inp/10;
+    }
+    res=odd*ev_place+even;
+    printf("%d",res);
+    return 0;
+}
+
+INPUT: 7163524
+OUTPUT : 7163524
