@@ -1,0 +1,37 @@
+//DESTRUCTION OR DISINTEGERATION:
+//SOFT APPROACH ONE (EASY APPROACH)
+#include<stdio.h>
+int main(){
+    int inp=947,place=1,digit;
+    while(inp>place){
+        digit=(inp/place)%10; //FORMULAE
+        place=place*10;
+        printf("%d",digit);
+        }
+}
+
+//APPROACH TWO
+#include<stdio.h>
+int main(){
+    int inp=947,place=1,digit;
+    while(inp>place){
+        digit=(inp%(place*10))/place; 
+        place=place*10;
+        printf("%d",digit);
+        }
+}
+*******************************************************
+//CONSTRUCTION OR INTEGERATION
+#include<stdio.h>
+int main(){
+    int inp=5858,place=1,digit,right=0,left=0;
+    while(inp){
+        digit=inp%10;
+        right=right*10+digit;//8585
+        left=left+digit*place;//5858
+        place*=10;
+        inp=inp/10;
+    }
+    printf("Right : %d   Left: %d",right,left);
+    
+}
