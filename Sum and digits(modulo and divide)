@@ -1,0 +1,14 @@
+
+#include<stdio.h>
+int main(){
+    int inp,res,sum=0,nod=0;
+    scanf("%d",&inp);
+    while(inp){
+        res=inp%10;
+        sum+=res;
+        printf("%d",res);
+        nod+=1;
+        inp=inp/10;
+    }
+    printf("\nSOF: %d NOD: %d",sum,nod);
+}
