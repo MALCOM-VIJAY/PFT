@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    int a[4][4]={
+      {10,12,33,4},
+      {15,6,3,44},
+      {1,42,63,77},
+      {18,2,93,21},
+  };
+  int r=4,c=4,st_col,end_col,temp;
+      for( int row=0;row<r;row++){
+          st_col=0;
+          end_col=c-1;
+          while(st_col<end_col){
+              temp=a[row][st_col];
+              a[row][st_col]=a[row][end_col];
+              a[row][end_col]=temp;
+              st_col++;
+              end_col--;
+          }
+      }
+      for(int row=0;row<r;row++){
+          for(int col=0;col<c;col++){
+              printf("%d ",a[row][col]);
+          }
+          printf("\n");
+      }
+ 
+    
+    return 0;
+}
+
+OUTPUT:
+4 33 12 10 
+44 3 6 15 
+77 63 42 1 
+21 93 2 18 
