@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if((a&3)==0)
+        printf("Divisible of 4\n");
+    if((a&7)==0)
+        printf("Divisible of 8");
+    else{
+        printf("Not divisible by both");
+    }
+    return 0;
+}
