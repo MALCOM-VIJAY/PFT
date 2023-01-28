@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int a=15,count=0;
+    int mask=1;
+    while(a>=mask){
+    if((a&mask)==mask)
+        count++;
+    mask=mask<<1;
+    }
+    printf("%d",count);
+    return 0;
+}
