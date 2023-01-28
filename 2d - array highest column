@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int mat[4][4]={
+      {10,12,33,4},
+      {15,6,3,44},
+      {1,42,63,77},
+      {18,2,93,21},
+  };
+  int sum=0,max=0,col_ind=0,row;
+  for(int col=0;col<4;col++){
+      sum=0;
+      for(row=0;row<4;row++){
+          sum+=mat[row][col];
+      }
+      if(sum>max){
+          max=sum;
+          col_ind=col;
+      }
+  }
+  printf("Max val: %d and  Column:%d",max,col_ind);
+    
+    return 0;
+}
