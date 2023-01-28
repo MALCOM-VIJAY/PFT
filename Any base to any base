@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int inp=10100,res=0,place=1,digit=0,from_base=0,to_base=0;
+    scanf("%d %d",&from_base,&to_base);
+    while(inp){
+        digit=inp%to_base;
+        res=res+digit*place;
+        place=place*from_base;
+        inp=inp/to_base;
+    }
+    printf("%d",res);
+  return 0;
+}
