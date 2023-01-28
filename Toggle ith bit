@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int inp=8;
+    int ith=4;
+    int mask=1;
+    mask=mask<<(ith-1);
+    inp=inp^mask;
+    printf("%d",inp);
+    return 0;
+}
