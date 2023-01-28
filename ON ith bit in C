@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int a=8;
+    int mask=1;
+    int ith=3;
+    mask=mask<<(ith-1);
+    a=a|mask;
+    printf("%d",a);
+    return 0;
+}
