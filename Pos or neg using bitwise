@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    int a=-6;
+    if((a>>31)==0){
+        printf("postive");
+    }
+    else{
+        printf("negative");
+    }
+}
