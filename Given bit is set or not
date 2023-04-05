@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    int a=5;
+    int mask=1;
+    mask=mask<<3;
+    if((a&mask)){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+}
