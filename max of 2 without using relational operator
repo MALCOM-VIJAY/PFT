@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+    int a=455,b=10;
+    int c=a-b;
+    c=c>>31;
+    int max=a+c*(a-b);
+    printf("%d",max);
+}
