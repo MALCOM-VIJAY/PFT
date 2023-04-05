@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    int a=32;
+    if((a&a-1)==0){
+        printf("It is 2 power");
+    }
+    else{
+        printf("Not a 2 power");
+    }
+}
